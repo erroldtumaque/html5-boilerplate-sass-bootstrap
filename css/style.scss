@@ -1,6 +1,19 @@
+@import './variables';
 @import './header';
 
-$blue: #00b1ef;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  @include flexCenter();
+
+  background: #333;
+  color: white;
+  height: 30vh;
+}
 
 p {
   color: $blue;
